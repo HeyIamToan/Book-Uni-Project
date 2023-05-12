@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+$linkPink: rgb(216, 29, 216);
+$linkPurple: rgb(98, 16, 250);
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #1b1b1b;
+    color: #fff;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+nav ul,
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    padding: 10px;
+
+    @media (min-width: 600px) {
+        padding: 20px;
+    }
+}
+
+a {
+    color: inherit;
+    position: relative;
+    text-decoration: none;
+}
+
+a::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    right: 0px;
+    bottom: -3px;
+    left: 0;
+    background-color: $linkPink;
+}
+
+a:hover {
+    color: $linkPink;
+
+    &::before {
+        background: linear-gradient(to right, $linkPink 40%, $linkPurple 75%);
+    }
+}
+
+nav.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: 600px) {
+        justify-content: space-between;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+    }
+
+    ul li {
+        margin-right: 20px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .fullwidth {
+        flex: 1 0 100%;
+        justify-content: center;
+
+        @media (min-width: 600px) {
+            flex: 0 1 auto;
+        }
+    }
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/4 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.book-manage {
+    background-color: #1b1b32;
+    height: 800px
+}
+
+#wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+label+label {
+    margin-left: 20px;
+}
+
+hr {
+    margin: 60px auto;
+    height: 3px;
+    width: 70%;
+    background-color: white;
+}
+
+ul li {
+    list-style: none;
+}
+
+.prompt {
+    width: 85%;
+    gap: 5px;
+    text-align: center;
+}
+
+
+input[type="submit"] {
+    display: block;
+    margin: 20px 18%;
+    width: 20%;
+}
+
+
+
+.contact {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    row-gap: 20px;
+    background-color: #1b1b32;
+}

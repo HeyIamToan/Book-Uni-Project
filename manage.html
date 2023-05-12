@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./favicon/bookicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./dist/style.css" type="text/css">
+    <title>Book Store</title>
+</head>
+<body>
+    <nav class="flexbox">
+        <li><a href="./index.html">Home</a></li>
+        <ul class="fullwidth">
+            <li><a href="./manage.html">Manage</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="book-manage">
+        <h1 style="text-align: center;">LIST OF BOOKS </h1>
+        <div id="wrapper">
+        
+        </div>
+        <hr>
+        <div class="prompt">
+                <label for="url">Embeded link: <input type="text" id="url" name="url" required></label>
+                <label for="title">Title: <input type="text" id="title" name="title" required></label>
+                <label for="author">Author: <input type="text" id="author" name="author" required></label>
+                <label for="price">Price: <input type="text" id="price" name="price" required></label>
+                <input type="submit" value="create" id="create">
+        </div>
+        <script type="application/javascript" src="./script.js"></script>
+    </div>
+
+</body>
+</html>

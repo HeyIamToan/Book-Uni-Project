@@ -1,0 +1,39 @@
+{
+  "books": [
+    {
+      "title": "Atomic Habits",
+      "author": "James Clear",
+      "price": "300",
+      "img_url": "https://jamesclear.com/wp-content/uploads/2022/09/9M-atomic-habits-dots.png",
+      "id": 1
+    },
+    {
+      "img_url": "https://images-na.ssl-images-amazon.com/images/I/81gTRv2HXrL._AC_UL600_SR600,600_.jpg",
+      "title": "Can't Hurt Me",
+      "author": "David Goggins",
+      "price": "120",
+      "id": 2
+    },
+    {
+      "img_url": "https://m.media-amazon.com/images/I/919PxBmnG1L.jpg",
+      "title": "Homo Sapiens",
+      "author": "Yuval Noah Harari",
+      "price": "834",
+      "id": 4
+    },
+    {
+      "img_url": "https://bookbins.in/wp-content/uploads/2022/11/The-Alchemist-Paulo-Coelho-Buy-Online-Bookbins-1.png",
+      "title": "The Alchemist",
+      "author": "Paulo Coelho",
+      "price": "521",
+      "id": 5
+    },
+    {
+      "img_url": "https://www.richdad.com/MediaLibrary/RichDad/Images/3d-books/2020/front-covers/3d-front-RDPD.png",
+      "title": "Rich Dad Poor Dad",
+      "author": "Robert Kiyosaki",
+      "price": "256",
+      "id": 6
+    }
+  ]
+}
